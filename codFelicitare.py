@@ -159,7 +159,7 @@ for key in possibleKeys:
         cod = coduriCaractere[i]
 
         # XOR
-        mesaj += chr (ord('A') + (cod ^ (ord(key[i % len_key]) - ord('A'))))
+        mesaj += chr (ord('A') + (cod ^ (ord(key[i % len_key]) - ord('A') + 1)) - 1)
     print mesaj
 
     # for shiftAmount in range (0, len(alfabetEngleza)):
